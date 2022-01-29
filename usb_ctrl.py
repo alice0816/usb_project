@@ -8,6 +8,7 @@ class USBControl(object):
         str = f's {chn}\r'
         self.ser.write(bytes(str, encoding='utf-8'))
 
+
 if __name__ == "__main__":
     usbCtrl = USBControl('COM10')
     usbCtrl.write('3')
